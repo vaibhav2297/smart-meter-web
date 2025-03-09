@@ -9,9 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f04ecf0-30cc-4af0-b988-df5905aab6bf" name="Changes" comment="🐛: base path was not">
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Models/Pages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Models/Pages.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/SignIn.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Pages/SignIn.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/wwwroot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/App.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,23 +22,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Code/Development" />
+        <entry key="$PROJECT_DIR$" value="Publish/deploy" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "vaibhav2297"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vaibhav2297&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/vaibhav2297/smart-meter-web.git",
-    "accountId": "acc8de24-b770-4caf-af6c-312d0762d5b0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vaibhav2297/smart-meter-web.git&quot;,
+    &quot;accountId&quot;: &quot;acc8de24-b770-4caf-af6c-312d0762d5b0&quot;
   }
-}]]></component>
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -53,22 +51,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.SmartMeter: https.executor": "Run",
-    "Publish to folder.Publish To github.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Code/feature/dashboard",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.log",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.SmartMeter: https.executor&quot;: &quot;Run&quot;,
+    &quot;Publish to folder.Publish To github.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Code/feature/dashboard&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.log&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.SmartMeter: https">
     <configuration name="Publish To github" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" platform="Any CPU" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net9.0" uuid_high="-5950380418508438470" uuid_low="-6358392547690171248" />

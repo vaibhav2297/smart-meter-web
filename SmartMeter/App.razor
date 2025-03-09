@@ -9,18 +9,3 @@
         <RedirectToSignIn />
     </NotFound>
 </Router>
-
-@code
-{
-    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
-
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-
-        if (NavigationManager.Uri == NavigationManager.BaseUri)
-        {
-            NavigationManager.NavigateTo(Models.Pages.SignIn.ToRoutePath(), true);
-        }
-    }
-}
