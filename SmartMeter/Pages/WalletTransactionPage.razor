@@ -6,7 +6,7 @@
 
 <h3>Wallet Transaction</h3>
 
-@if (!IsAuthenticated)
+@if (!_isAuthenticated)
 {
     <p class="text-danger">You need to log in to access this page.</p>
 }
@@ -57,8 +57,8 @@ else
     private List<WalletTransaction>? transactions;
 
     private User currentUser;
-    
-    private bool IsAuthenticated;
+
+    private bool _isAuthenticated;
 
     protected override async Task OnInitializedAsync()
     {
@@ -69,7 +69,7 @@ else
         }
         else
         {
-            IsAuthenticated = true;
+            _isAuthenticated = true;
             await GetWalletTransactionsAsync();
         }
     }
