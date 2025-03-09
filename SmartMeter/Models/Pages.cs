@@ -13,7 +13,7 @@ public static class PagesExtensions
     {
         return page switch
         {
-            Pages.SignIn => "/signin",
+            Pages.SignIn => "/",
             Pages.WalletTransaction => "/wallet-transactions",
             Pages.MeterLogs => "/meter-logs",
             _ => page.ToString() // Default fallback

@@ -8,23 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f04ecf0-30cc-4af0-b988-df5905aab6bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/MeterLogs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/MeterTransaction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/Pages.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/WalletTransaction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMeter/Pages/MeterLogPage.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMeter/Pages/SignIn.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartMeter/Pages/WalletTransactionPage.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartMeter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmartMeter/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7f04ecf0-30cc-4af0-b988-df5905aab6bf" name="Changes" comment="🐛: base path was not">
       <change beforePath="$PROJECT_DIR$/SmartMeter/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/Home.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/Weather.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartMeter/SmartMeter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/SmartMeter.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +22,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Code/Development" />
+        <entry key="$PROJECT_DIR$" value="Publish/deploy" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vaibhav2297&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vaibhav2297/smart-meter-web.git&quot;,
+    &quot;accountId&quot;: &quot;acc8de24-b770-4caf-af6c-312d0762d5b0&quot;
+  }
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -56,7 +53,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.SmartMeter: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.SmartMeter: https.executor&quot;: &quot;Run&quot;,
     &quot;Publish to folder.Publish To github.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -66,12 +63,13 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.log&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Publish To github">
+  <component name="RunManager" selected=".NET Launch Settings Profile.SmartMeter: https">
     <configuration name="Publish To github" type="DotNetFolderPublish" factoryName="Publish to folder">
-      <riderPublish configuration="Release" platform="Any CPU" self_contained="true" target_folder="$PROJECT_DIR$/../Publish" target_framework="net9.0" uuid_high="-5950380418508438470" uuid_low="-6358392547690171248" />
+      <riderPublish configuration="Release" platform="Any CPU" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net9.0" uuid_high="-5950380418508438470" uuid_low="-6358392547690171248" />
       <method v="2" />
     </configuration>
     <configuration name="SmartMeter: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -122,6 +120,7 @@
       <workItem from="1740893183693" duration="34000" />
       <workItem from="1740893288818" duration="10638000" />
       <workItem from="1741453075732" duration="6147000" />
+      <workItem from="1741503597351" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="🎉: Initial Project Setup">
       <option name="closed" value="true" />
@@ -131,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740893462786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="✨: Wallet transactions and Meter Logs">
+      <option name="closed" value="true" />
+      <created>1741504729224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741504729224</updated>
+    </task>
+    <task id="LOCAL-00003" summary="🐛: base path was not">
+      <option name="closed" value="true" />
+      <created>1741509851381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741509851381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +168,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value=": Initial Project Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value=": Initial Project Setup" />
+    <MESSAGE value="✨: Wallet transactions and Meter Logs" />
+    <MESSAGE value=": base path was not" />
+    <option name="LAST_COMMIT_MESSAGE" value=": base path was not" />
   </component>
 </project>
