@@ -4,14 +4,42 @@
     <projectFile profileName="http">SmartMeter/SmartMeter.csproj</projectFile>
     <projectFile profileName="https">SmartMeter/SmartMeter.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f04ecf0-30cc-4af0-b988-df5905aab6bf" name="Changes" comment="" />
+    <list default="true" id="7f04ecf0-30cc-4af0-b988-df5905aab6bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/MeterLogs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/MeterTransaction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/Pages.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMeter/Models/WalletTransaction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMeter/Pages/MeterLogPage.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMeter/Pages/SignIn.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartMeter/Pages/WalletTransactionPage.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartMeter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmartMeter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/Home.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/Weather.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/SmartMeter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/SmartMeter.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Code/Development" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -19,22 +47,33 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2tkPcrpYcrUiOfN2ddcus4nqXMm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.SmartMeter: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.SmartMeter: https.executor&quot;: &quot;Debug&quot;,
+    &quot;Publish to folder.Publish To github.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Code/feature/dashboard&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.SmartMeter: https">
+}</component>
+  <component name="RunManager" selected="Publish to folder.Publish To github">
+    <configuration name="Publish To github" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" self_contained="true" target_folder="$PROJECT_DIR$/../Publish" target_framework="net9.0" uuid_high="-5950380418508438470" uuid_low="-6358392547690171248" />
+      <method v="2" />
+    </configuration>
     <configuration name="SmartMeter: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/SmartMeter/SmartMeter.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -66,6 +105,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.SmartMeter: http" />
+      <item itemvalue=".NET Launch Settings Profile.SmartMeter: https" />
+      <item itemvalue="Publish to folder.Publish To github" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,8 +120,18 @@
       <option name="presentableId" value="Default" />
       <updated>1740893183249</updated>
       <workItem from="1740893183693" duration="34000" />
-      <workItem from="1740893288818" duration="65000" />
+      <workItem from="1740893288818" duration="10638000" />
+      <workItem from="1741453075732" duration="6147000" />
     </task>
+    <task id="LOCAL-00001" summary="🎉: Initial Project Setup">
+      <option name="closed" value="true" />
+      <created>1740893462786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740893462786</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,7 +139,20 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value=": Initial Project Setup" />
+    <option name="LAST_COMMIT_MESSAGE" value=": Initial Project Setup" />
   </component>
 </project>

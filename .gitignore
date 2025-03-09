@@ -1,5 +1,21 @@
+# Ignore build outputs
 bin/
 obj/
-/packages/
+
+# Ignore user-specific files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Ignore NuGet packages
+packages/
+
+# Ignore publish folder
+publish/
+Publish/
+
+# Ignore rider caches
 riderModule.iml
 /_ReSharper.Caches/

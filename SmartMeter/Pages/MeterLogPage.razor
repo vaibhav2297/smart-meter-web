@@ -1,0 +1,114 @@
+﻿@page "/meter-logs"
+@using SmartMeter.Models
+@using Supabase.Gotrue
+@inject Supabase.Client SupabaseClient
+@inject NavigationManager Navigation
+
+<h3>Meter Logs</h3>
+
+@if (!IsAuthenticated)
+{
+    <p class="text-danger">You need to log in to access this page.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Meter ID</th>
+            <th>Purchase Frequency</th>
+            <th>Accumulated Usage</th>
+            <th>Surplus Variable</th>
+            <th>Total Purchase</th>
+            <th>Battery Voltage</th>
+            <th>Valve Status</th>
+            <th>Alarm Variables</th>
+            <th>Overdraft Variables</th>
+            <th>Minimum Usage Variable</th>
+            <th>Additional Deductions</th>
+            <th>Product Version</th>
+            <th>Program Version</th>
+            <th>In place Method</th>
+            <th>Calibration Identification</th>
+            <th>Payment Method</th>
+            <th>Created At</th>
+        </tr>
+        </thead>
+        <tbody>
+        @if (meterLogs is not null)
+        {
+            @foreach (var meterLog in meterLogs)
+            {
+                <tr>
+                    <td>@meterLog.UserId</td>
+                    <td>@meterLog.MeterId</td>
+                    <td>@meterLog.PurchaseFrequency</td>
+                    <td>@meterLog.AccumulatedUsage</td>
+                    <td>@meterLog.SurplusVariable</td>
+                    <td>@meterLog.TotalPurchase</td>
+                    <td>@meterLog.BatteryVoltage</td>
+                    <td>@meterLog.ValveStatus</td>
+                    <td>@meterLog.AlarmVariables</td>
+                    <td>@meterLog.OverdraftVariables</td>
+                    <td>@meterLog.MinimumUsageVariable</td>
+                    <td>@meterLog.AdditionalDeductions</td>
+                    <td>@meterLog.ProductVersion</td>
+                    <td>@meterLog.ProgramVersion</td>
+                    <td>@meterLog.InplaceMethod</td>
+                    <td>@meterLog.CalibrationIdentification</td>
+                    <td>@meterLog.PaymentMethod</td>
+                    <td>@meterLog.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="18">No meter logs available.</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<MeterLogs>? meterLogs;
+
+    private User? currentUser;
+
+    private bool IsAuthenticated;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var session = SupabaseClient.Auth.CurrentSession;
+        if (session == null)
+        {
+            Navigation.NavigateTo(Pages.SignIn.ToRoutePath());
+        }
+        else
+        {
+            IsAuthenticated = true;
+            await GetMeterLogsAsync();
+        }
+    }
+
+    private async Task GetMeterLogsAsync()
+    {
+        currentUser = SupabaseClient.Auth.CurrentUser;
+
+        if (currentUser == null)
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        var result = await SupabaseClient
+            .From<MeterLogs>()
+            .Select("*")
+            .Get();
+
+        meterLogs = result.Models;
+    }
+
+}

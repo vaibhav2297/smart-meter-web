@@ -1,0 +1,94 @@
+﻿@page "/wallet-transactions"
+@using SmartMeter.Models
+@using Supabase.Gotrue
+@inject Supabase.Client SupabaseClient
+@inject NavigationManager Navigation
+
+<h3>Wallet Transaction</h3>
+
+@if (!IsAuthenticated)
+{
+    <p class="text-danger">You need to log in to access this page.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Meter ID</th>
+            <th>Amount</th>
+            <th>User ID</th>
+            <th>Purchase Times</th>
+            <th>Transaction Type</th>
+            <th>Purchase Frequency</th>
+            <th>Created At</th>
+        </tr>
+        </thead>
+        <tbody>
+        @if (transactions is not null)
+        {
+            @foreach (var transaction in transactions)
+            {
+                <tr>
+                    <td>@transaction.Id</td>
+                    <td>@transaction.MeterId</td>
+                    <td>@transaction.Amount</td>
+                    <td>@transaction.UserId</td>
+                    <td>@transaction.PurchaseTimes</td>
+                    <td>@transaction.TransactionType</td>
+                    <td>@transaction.PurchaseFrequency</td>
+                    <td>@transaction.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="8">No wallet transactions available.</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+ 
+}
+
+@code {
+    private List<WalletTransaction>? transactions;
+
+    private User currentUser;
+    
+    private bool IsAuthenticated;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var session = SupabaseClient.Auth.CurrentSession;
+        if (session == null)
+        {
+            Navigation.NavigateTo(Pages.SignIn.ToRoutePath());
+        }
+        else
+        {
+            IsAuthenticated = true;
+            await GetWalletTransactionsAsync();
+        }
+    }
+    
+    private async Task GetWalletTransactionsAsync()
+    {
+        currentUser = SupabaseClient.Auth.CurrentUser;
+
+        if (currentUser == null)
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+        
+        var result = await SupabaseClient
+            .From<WalletTransaction>()
+            .Select("*")
+            .Get();
+
+        transactions = result.Models;
+    }
+}
