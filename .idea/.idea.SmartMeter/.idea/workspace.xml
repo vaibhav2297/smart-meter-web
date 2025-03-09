@@ -8,8 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f04ecf0-30cc-4af0-b988-df5905aab6bf" name="Changes" comment="🐛: base path was not">
+    <list default="true" id="7f04ecf0-30cc-4af0-b988-df5905aab6bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartMeter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmartMeter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartMeter/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Models/Pages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Models/Pages.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartMeter/Pages/WalletTransactionPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/SmartMeter/Pages/WalletTransactionPage.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +40,21 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/vaibhav2297/smart-meter-web.git&quot;,
     &quot;accountId&quot;: &quot;acc8de24-b770-4caf-af6c-312d0762d5b0&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;vaibhav2297&quot;,
+    &quot;repository&quot;: &quot;smart-meter-web&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Vaibhav/Projects/Freelance/BLEMeter/Web/Git-SmartMeter/SmartMeter/App.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -51,23 +67,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.SmartMeter: https.executor&quot;: &quot;Run&quot;,
-    &quot;Publish to folder.Publish To github.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Code/feature/dashboard&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.log&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.SmartMeter: http.executor": "Run",
+    ".NET Launch Settings Profile.SmartMeter: https.executor": "Debug",
+    "Publish to folder.Publish To github.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Code/feature/dashboard",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.log",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.SmartMeter: https">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.SmartMeter: http">
     <configuration name="Publish To github" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" platform="Any CPU" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net9.0" uuid_high="-5950380418508438470" uuid_low="-6358392547690171248" />
       <method v="2" />
@@ -79,6 +96,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -121,6 +139,8 @@
       <workItem from="1740893288818" duration="10638000" />
       <workItem from="1741453075732" duration="6147000" />
       <workItem from="1741503597351" duration="3734000" />
+      <workItem from="1741543663251" duration="672000" />
+      <workItem from="1741550755340" duration="806000" />
     </task>
     <task id="LOCAL-00001" summary="🎉: Initial Project Setup">
       <option name="closed" value="true" />
@@ -146,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741509851381</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="🐛: Fixed looping into the sign in page">
+      <option name="closed" value="true" />
+      <created>1741510862140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741510862140</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +198,7 @@
     <MESSAGE value=": Initial Project Setup" />
     <MESSAGE value="✨: Wallet transactions and Meter Logs" />
     <MESSAGE value=": base path was not" />
-    <option name="LAST_COMMIT_MESSAGE" value=": base path was not" />
+    <MESSAGE value=": Fixed looping into the sign in page" />
+    <option name="LAST_COMMIT_MESSAGE" value=": Fixed looping into the sign in page" />
   </component>
 </project>

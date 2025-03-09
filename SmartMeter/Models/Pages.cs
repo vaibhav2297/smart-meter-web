@@ -16,7 +16,7 @@ public static class PagesExtensions
             Pages.SignIn => "/",
             Pages.WalletTransaction => "/wallet-transactions",
             Pages.MeterLogs => "/meter-logs",
-            _ => page.ToString() // Default fallback
+            _ => "/" // Default fallback
         };
     }
 }
